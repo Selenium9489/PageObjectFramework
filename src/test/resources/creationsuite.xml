@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Create Suite" parallel="tests">
+  <test name="CreateLead Test">
+    <classes>
+      <class name="com.zoho.suite.testcases.creation.CreateLeadTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test name="CreateTask Test">
+    <classes>
+      <class name="com.zoho.suite.testcases.creation.CreateTaskTest"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

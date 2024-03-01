@@ -1,0 +1,26 @@
+Standalone
+Classical Grid (Hub and node)
+Fully Distributed (Session, Distributor etc)
+https://codoid.com/selenium-grid-4-distributed-execution/
+https://github.com/SeleniumHQ/selenium/wiki/Selenium-Grid-4
+https://testsigma.com/blog/selenium-4-automation-engineer-expect/
+
+
+java -jar selenium-server-4.0.0-alpha-5.jar standalone
+
+-----------------------------------------------------------------
+Hub and Node- Selenium 3, 4
+java -jar selenium-server-4.0.0-alpha-5.jar hub
+java -jar selenium-server-4.0.0-alpha-5.jar node
+java -jar selenium-server-4.0.0-alpha-5.jar node --port 5556
+java -jar selenium-server-4.0.0-alpha-5.jar node --port 5557
+
+
+-----------------------------------------------------------------
+Fully Distributed System -Selenium 4
+
+java -jar selenium-server-4.0.0-alpha-5.jar sessions
+java -jar selenium-server-4.0.0-alpha-5.jar distributor --sessions http://localhost:5556
+java -jar selenium-server-4.0.0-alpha-5.jar router --sessions http://localhost:5556 --distributor http://localhost:5553
+java -jar selenium-server-4.0.0-alpha-5.jar node --detect-drivers
+

@@ -1,0 +1,8 @@
+git init
+git config --global user.email "appiumselendroid@gmail.com"
+git config --global user.name "ashishselenium1"
+git add CucumberImplementation
+git commit -m "second
+
+git remote add origin https://github.com/ashishselenium1/testme1.git
+git push -u origin master
